@@ -4,7 +4,6 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\GenericsController;
 
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,8 +15,6 @@ use App\Http\Controllers\GenericsController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Route::get('/', [GenericsController::class, 'index'])->name("generics.index");
+
+Route::get('/a-propos-de-nous', [GenericsController::class, 'index'])->name("about_us.index");
