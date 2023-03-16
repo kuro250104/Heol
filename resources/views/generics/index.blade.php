@@ -19,7 +19,7 @@
                 </span>
                 <div class="bottom_line_product_show"></div> 
                 <div class="discovery_class">
-                    <a href="discover_heol.html" class="discovery"><h4>Découvrir</h4></a>
+                    <a href="{{ route('generics.about_us')}}" class="discovery"><h4>Découvrir</h4></a>
                 </div>
         </div>
     </div>

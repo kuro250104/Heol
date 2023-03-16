@@ -23,6 +23,16 @@
             <div>
                 <span class="order_detail_txt">Détail panier</span>
             </div>
+            <div class="order_detail_class_articles">
+                <span class="order_detail_article_txt">Ensemble de sport</span>
+                <div>
+                    <div>
+                        <button id="delete_one"type="button" class="btn_add_articles">-</button>
+                        <button id="add_one"type="button" class="btn_add_articles">+</button>
+                    </div>
+                </div>
+                <span class="order_detail_price" id="count">1</span>
+            </div>
             <div>
                 <div class="order_detail_class">
                     <span class="order_detail_alt_txt">Total du panier</span>

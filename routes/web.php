@@ -31,6 +31,8 @@ Route::get('/prodcuts', [ProductController::class, 'store'])->name('product.stor
 Route::get('/a-propos-de-nous', [AboutUsController::class, 'index'])->name("generics.about_us");
 
 Route::get('/nos-articles', [ArticlesController::class, 'index'])->name("articles.index");
+Route::get('/article', [ArticlesController::class, 'show'])->name("articles.show");
+
 
 Route::get('/votre-panier', [PaymentController::class, 'index'])->name("payment.checkout");
 Route::get('/moyen-de-payement', [PaymentController::class, 'payment'])->name("payment.payment");

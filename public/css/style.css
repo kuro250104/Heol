@@ -2784,3 +2784,29 @@ input.navbar-checkbox {
     align-items: center;
     margin-top: 20px;
 }
+
+.order_detail_class_articles{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;;
+}
+
+.order_detail_article_txt{
+    font-size: 30px;
+}
+
+.btn_add_articles{
+    background-color: #BA9755;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.btn_add_articles:hover{
+    background-color: #4B6F43;
+    color: #FAF0E6;
+}

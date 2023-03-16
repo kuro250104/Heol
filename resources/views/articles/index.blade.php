@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="articles_div"  href="">
-        <a class="articles" href="product1.html">
+        <a class="articles" href="{{ route('articles.show')}}">
             <div>
                 <img src="images/bag-view-1.png" class="articles_img">
             </div>
