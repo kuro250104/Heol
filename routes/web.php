@@ -1,4 +1,5 @@
 <?php
+use App\Http\Controllers\ProductController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -18,3 +19,5 @@ use App\Http\Controllers\GenericsController;
 Route::get('/', [GenericsController::class, 'index'])->name("generics.index");
 
 Route::get('/a-propos-de-nous', [GenericsController::class, 'index'])->name("about_us.index");
+
+Route::get('/prodcuts', [ProductController::class, 'store'])->name('product.store');
