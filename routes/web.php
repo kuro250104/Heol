@@ -3,6 +3,9 @@ use App\Http\Controllers\ProductController;
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\GenericsController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,3 +22,8 @@ Route::get('/', function () {
 });
 
 Route::get('/prodcuts', [ProductController::class, 'store'])->name('product.store');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', [GenericsController::class, 'index'])->name("generics.index");
