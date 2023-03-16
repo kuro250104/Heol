@@ -16,8 +16,12 @@ use App\Http\Controllers\GenericsController;
 |
 */
 
-Route::get('/', [GenericsController::class, 'index'])->name("generics.index");
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/prodcuts', [ProductController::class, 'store'])->name('product.store');
 
 Route::get('/a-propos-de-nous', [GenericsController::class, 'index'])->name("about_us.index");
 
-Route::get('/prodcuts', [ProductController::class, 'store'])->name('product.store');
+Route::get('/', [GenericsController::class, 'index'])->name("generics.index");
