@@ -88,5 +88,8 @@
             </a>
         </div>
     </div>
+    <div class="btn_confirm_payement">
+        <a href="{{ route('payment.confirmation')}}" class="btn_payement"><h4>Payement</h4></a>
+    </div>
 
 @endsection

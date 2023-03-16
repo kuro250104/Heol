@@ -1,15 +1,15 @@
 <nav>
     <div class="navbar">
         <div>
-            <a  href="index.html">
+            <a  href="{{ route('generics.index') }}">
                 <img src="images/heol_logo.png" alt="heol logo" class="img-navbar">
             </a>
         </div>
         <div class="menu-navbar">
-            <a class="philosopher" href="our_articles.html">
+            <a class="philosopher" href="{{ route('articles.index') }}">
                 Nos articles
             </a>
-            <a class="philosopher" href="discover_heol.html">
+            <a class="philosopher" href="{{ route('generics.about_us') }}">
                 A propos de nous
             </a>
             <div class="navbar-fa-div">
@@ -19,8 +19,8 @@
                     </p>
                     <i class="fas fa-user fa-navbar fa-user-margin"></i>
                 </a>
-                <a href="checkout.html">
-                    <i class="fas fa-shopping-bag fa-color fa-navbar" href="checkout.html"></i>
+                <a href="{{ route('payment.checkout') }}">
+                    <i class="fas fa-shopping-bag fa-color fa-navbar" href="{{ route('payment.checkout') }}"></i>
                 </a>
             </div>
         </div>
