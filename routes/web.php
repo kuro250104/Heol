@@ -17,13 +17,11 @@ use App\Http\Controllers\GenericsController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/prodcuts', [ProductController::class, 'store'])->name('product.store');
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+
+Route::get('/prodcuts', [ProductController::class, 'store'])->name('product.store');
+
 
 Route::get('/', [GenericsController::class, 'index'])->name("generics.index");
