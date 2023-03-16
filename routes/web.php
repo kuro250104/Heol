@@ -4,6 +4,7 @@ use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\GenericsController;
+use App\Http\Controllers\ArticlesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +26,4 @@ Route::get('/prodcuts', [ProductController::class, 'store'])->name('product.stor
 Route::get('/a-propos-de-nous', [GenericsController::class, 'index'])->name("about_us.index");
 
 Route::get('/', [GenericsController::class, 'index'])->name("generics.index");
+Route::get('/nos-articles', [ArticlesController::class, 'index'])->name("articles.index");
