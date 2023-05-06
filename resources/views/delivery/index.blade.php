@@ -49,7 +49,8 @@
                 </div>
             </div>
         </div>
-        <div>
+        <form action="{{ route('delivery.store')}}" method="POST">
+            @csrf
             <div  class="delivery_all_info">
                 <div class="delivery_all_info_div">
                     <span class="delivery_all_info_txt">Information de livraison</span>
@@ -58,40 +59,44 @@
                     <div>
                         <span class="delivery_txt">Nom</span>
                         <div>
-                            <input type="text" class="input_delivery">
+                            <input type="text" class="input_delivery" name="name" id="name"required>
                         </div>
                     </div>
                     <div>
                         <span class="delivery_txt">Adresse mail</span>
                         <div>
-                            <input type="text" class="input_delivery">
+                            <input type="email" class="input_delivery" name="email" id="email" required>
                         </div>
                     </div>
                     <div>
                         <span class="delivery_txt">Adresse de livraison</span>
                         <div>
-                            <input type="text" class="input_delivery">
+                            <input type="text" class="input_delivery" name="delivery_address" id="delivery_address" required>
                         </div>
                     </div>
                     <div>
                         <span class="delivery_txt">Code Postale</span>
                         <div>
-                            <input type="text" class="input_delivery">
+                            <input type="text" class="input_delivery" name="postal_code" id="postal_code" pattern="[0-9]{5}" required>
                         </div>
                     </div>
                     <div>
                         <span class="delivery_txt">Commune</span>
                         <div>
-                            <input type="text" class="input_delivery">
+                            <input type="text" class="input_delivery" name="city" id="city" required>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="btn_continue_payement_div">
-                <a href="{{ route('articles.index') }}" class="btn_continue"><h4>Continuer mes achats</h4></a>
-                <a href="{{ route('payment.payment') }}" class="btn_payement"><h4>Payement</h4></a>
+                {{-- <a href="{{ route('articles.index') }}" class="btn_continue">
+                    <h4>Continuer mes achats</h4>
+                </a> --}}
+                <button href="{{ route('payment.index') }}" class="btn_payement">
+                    <h4>Payement</h4>
+                </button>
             </div>
-        </div>
+        </form>
     </div>
 
 @endsection

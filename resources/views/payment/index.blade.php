@@ -47,23 +47,23 @@
                 <div>
                     <div class="delivery_info_done">
                         <p>Nom</p>
-                        <p>DUPOND Dupont</p>
+                        <p>{{ $delivery->name }}</p>
                     </div>
                     <div class="delivery_info_done">
                         <p class="mail_txt_space">Adresse mail</p>
-                        <p>dupond.dupont@dupons.com</p>
+                        <p>{{ $delivery->email }}</p>
                     </div>
                     <div class="delivery_info_done">
                         <p>Adresse de livraison</p>
-                        <p>18 rue du DUPOND</p>
+                        <p>{{ $delivery->delivery_address }}</p>
                     </div>
                     <div class="delivery_info_done">
                         <p>Code Postale</p>
-                        <p>49130</p>
+                        <p>{{ $delivery->postal_code }}</p>
                     </div>
                     <div class="delivery_info_done">
                         <p>Commune</p>
-                        <p>Angers</p>
+                        <p>{{ $delivery->city }}</p>
                     </div>
                 </div>
             </div>
@@ -89,7 +89,7 @@
         </div>
     </div>
     <div class="btn_confirm_payement">
-        <a href="{{ route('payment.confirmation')}}" class="btn_payement"><h4>Payement</h4></a>
+        <a href="{{ route('payment.show')}}" class="btn_payement"><h4>Payement</h4></a>
     </div>
 
 @endsection

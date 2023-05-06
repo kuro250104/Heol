@@ -65,7 +65,7 @@
             </div>
             <div class="confiramtion_adress">
                 <span class="confirmed_adress_txt">Adresse de livraison</span>
-                <span>18 Richardson Drive<br>Fountain Valley, <br>CA 92708</span>
+                <span>{{ $delivery->delivery_address }}<br>{{ $delivery->postal_code }}<br>{{ $delivery->city }}</span>
             </div>
         </div>
     </footer>

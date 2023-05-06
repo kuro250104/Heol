@@ -71,6 +71,9 @@
                 </div>
             </div>
         </div>
+        <div class="background_new_sac_show">
+            <img class="news_sac_show_img"src="images/sac-ajout-recent.png">
+        </div>
     </div>
 
 @endsection

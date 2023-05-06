@@ -4,20 +4,24 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\Delivery;
+
+
 class PaymentController extends Controller
 {
     public function index()
     {
-        return view('payment.checkout');
+        $user = auth()->user();
+        $delivery = $user->deliveries()->latest()->first();
+
+        return view('payment.index', compact('delivery'));
     }
 
-    public function payment()
+    public function show()
     {
-        return view('payment.payment');
-    }
+        $user = auth()->user();
+        $delivery = $user->deliveries()->latest()->first();
 
-    public function confirmation_payment()
-    {
-        return view('payment.confirmation');
+        return view('payment.show', compact('delivery'));
     }
 }
