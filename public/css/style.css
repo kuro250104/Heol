@@ -10,13 +10,34 @@ body{
     margin-top: 0px;
 }
 
-a:visited{
+nav a:hover{
+    color:#4B6F43;
+    transition:0.5s;
+    text-decoration: none;
+}
+
+.show_2_product a:visited{
     color: #333333;
 }
 
-a:hover{
+.show_2_product a:hover{
     color:#4B6F43;
-    transition:0.4s;
+    transition:0.5s;
+    text-decoration: none;
+}
+
+nav a:visited{
+    color: #333333;
+}
+
+.discovery:visited{
+    color: #333333;
+}
+
+.discovery:hover{
+    color:#4B6F43;
+    transition:0.5s;
+    text-decoration: none;
 }
 
 .product{
@@ -452,10 +473,6 @@ li{
     font-size: 2em;
 }
 
-a:hover{
-    color: #4B6F43;
-}
-
 .navbar-fa-div{
     display: flex;
     justify-content: space-between;
@@ -814,7 +831,7 @@ input.navbar-checkbox {
     color: #333333;
     font-family: 'Cormorant Garamond';
     font-size: 30px;
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
 .product{
@@ -2810,4 +2827,30 @@ input.navbar-checkbox {
 .btn_add_articles:hover{
     background-color: #4B6F43;
     color: #FAF0E6;
+}
+
+.btn_recent_articles{
+    border: 2px solid #BA9755;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    width: 300px;
+    height: 50px;
+    color: #BA9755;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-top: 75px;
+}
+
+.btn_recent_articles a:hover{
+    text-decoration: none;
+}
+
+.btn_recent_articles:hover{
+    color: #FAF0E6;
+    background-color: #4B6F43;
+    border: 2px solid #4B6F43;
 }

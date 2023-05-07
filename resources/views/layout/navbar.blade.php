@@ -1,4 +1,4 @@
-<nav>
+<nav style="text-decoration: none">
     <div class="navbar">
         <div>
             <a  href="{{ route('generics.index') }}">
@@ -26,7 +26,7 @@
                             <i class="fas fa-user fa-navbar fa-user-margin"></i>
                         </div>
                     </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                    <div class="dropdown-menu dropdown-menu-right text-dark" aria-labelledby="dropdownMenuLink">
                         @if(Auth::check())
                             <form id="logout-form" action="{{ route('logout') }}" method="POST">
                                 @csrf
