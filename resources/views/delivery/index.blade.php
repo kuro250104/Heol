@@ -7,12 +7,12 @@
             <i class="fa fa-shopping-cart"></i>
             <span class="txt_icon">Panier</span>
         </a>
-        <div class="right_line_checkout"></div> 
+        <div class="right_line_checkout"></div>
         <a class="payement_icon">
             <i class="fa fa-credit-card"></i>
             <span class="txt_icon">Payement</span>
         </a>
-        <div class="right_line_checkout"></div> 
+        <div class="right_line_checkout"></div>
         <a class="check_icon">
             <i class="fa fa-check"></i>
             <span class="txt_icon">Confirmation</span>
@@ -42,7 +42,7 @@
                 <span class="order_detail_alt_txt">Frais de livraison</span>
                     <span class="order_detail_price">0€</span>
                 </div>
-                <div class="top_line__totalcheckout"></div> 
+                <div class="top_line__totalcheckout"></div>
                 <div class="order_detail_class">
                     <span class="order_detail_alt_txt">Total</span>
                     <span class="order_detail_price">300€</span>
@@ -89,7 +89,7 @@
                 </div>
             </div>
             <div class="btn_continue_payement_div">
-                {{-- <a href="{{ route('articles.index') }}" class="btn_continue">
+                {{-- <a href="{{ route('products.index') }}" class="btn_continue">
                     <h4>Continuer mes achats</h4>
                 </a> --}}
                 <button href="{{ route('payment.index') }}" class="btn_payement">

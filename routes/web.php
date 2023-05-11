@@ -9,6 +9,7 @@ use App\Http\Controllers\ArticlesController;
 use App\Http\Controllers\AboutUsController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\DeliveryController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,12 +36,14 @@ Route::get('/dashboard', function () {
 
 Route::get('/home', [GenericsController::class, 'index'])->name("generics.index");
 
-Route::get('/prodcuts', [ProductController::class, 'store'])->name('product.store');
+
 
 Route::get('/a-propos-de-nous', [AboutUsController::class, 'index'])->name("generics.about_us");
 
-Route::get('/nos-articles', [ArticlesController::class, 'index'])->name("articles.index");
-Route::get('/article', [ArticlesController::class, 'show'])->name("articles.show");
+Route::get('/add-products', [ProductController::class, 'store'])->name('products.store');
+
+Route::get('/nos-produits', [ProductController::class, 'index'])->name("products.index");
+Route::get('/article{id}', [ProductController::class, 'show'])->name("products.show");
 
 
 Route::get('/votre-panier', [DeliveryController::class, 'index'])->name("delivery.index");
