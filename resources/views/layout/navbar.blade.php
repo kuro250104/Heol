@@ -6,7 +6,7 @@
             </a>
         </div>
         <div class="menu-navbar">
-            <a class="philosopher" href="{{ route('articles.index') }}">
+            <a class="philosopher" href="{{ route('products.index') }}">
                 Nos articles
             </a>
             <a class="philosopher" href="{{ route('generics.about_us') }}">
