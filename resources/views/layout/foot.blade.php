@@ -15,21 +15,21 @@
         </div>
         <div class="img_4_spcial_grp">
             <a href="">
-                <img src="images/Facebook.png" class="social_media_img">
+                {{-- <img src="images/Facebook.png" class="social_media_img"> --}}
             </a>
             <a href="https://www.instagram.com/heol.branding/">
                 <img src="images/Instagram.png"class="social_media_img">
             </a>
                 <a href="">
-                <img src="images/Twitter.png"class="social_media_img">
+                {{-- <img src="images/Twitter.png"class="social_media_img"> --}}
             </a>
             <a href="">
-                <img src="images/Youtube.png"class="social_media_img">
+                {{-- <img src="images/Youtube.png"class="social_media_img"> --}}
             </a>
         </div>
     </div>
     <div>
         <span class="last_part_title">Contact</span><br>
-        <span class="contact_num">+33 7 72 30 63 48</span>
+        <a href="tel:" class="contact_num tel">+33 7 72 30 63 48</a>
     </div>
 </div>

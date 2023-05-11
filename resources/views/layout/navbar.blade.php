@@ -6,7 +6,7 @@
             </a>
         </div>
         <div class="menu-navbar">
-            <a class="philosopher" href="{{ route('articles.index') }}">
+            <a class="philosopher" href="{{ route('products.index') }}">
                 Nos articles
             </a>
             <a class="philosopher" href="{{ route('generics.about_us') }}">
@@ -16,7 +16,7 @@
                 <div class="dropdown connect-display">
                     <a href="#" class="dropdown-toggle dropdown-toggle-no-caret" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="d-flex align-items-center">
-                            <div class="dropdown-item philosopher">
+                            <div class="dropdown-item philosopher" style="color: #333333">
                                 @if(Auth::check())
                                     {{ Auth::user()->name }}
                                 @else
