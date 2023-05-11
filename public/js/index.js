@@ -1,14 +1,16 @@
-var cart = 0;
+var cart = 1;
 
 function ajout() {
     cart++;
     document.getElementById("count").textContent = cart;
 }
-    document.getElementById("add_one").addEventListener("click", ajout);
+document.getElementById("add_one").addEventListener("click", ajout);
 
 function remove() {
-    cart--;
-    document.getElementById("count").textContent = cart;
+    if (cart > 1) { // Vérifie si le nombre de produits est supérieur à 1
+        cart--;
+        document.getElementById("count").textContent = cart;
+    }
 }
-    document.getElementById("delete_one").addEventListener("click", remove);
+document.getElementById("delete_one").addEventListener("click", remove);
 

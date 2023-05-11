@@ -89,9 +89,9 @@
                 </div>
             </div>
             <div class="btn_continue_payement_div">
-                {{-- <a href="{{ route('articles.index') }}" class="btn_continue">
+                <a href="{{ route('articles.index') }}" class="btn_continue">
                     <h4>Continuer mes achats</h4>
-                </a> --}}
+                </a>
                 <button href="{{ route('payment.index') }}" class="btn_payement">
                     <h4>Payement</h4>
                 </button>

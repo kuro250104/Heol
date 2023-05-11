@@ -13,28 +13,31 @@
                 A propos de nous
             </a>
             <div class="navbar-fa-div">
-                <div class="dropdown">
+                <div class="dropdown connect-display">
                     <a href="#" class="dropdown-toggle dropdown-toggle-no-caret" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="d-flex align-items-center">
-                            <div class="philosopher">
+                            <div class="dropdown-item philosopher">
                                 @if(Auth::check())
                                     {{ Auth::user()->name }}
                                 @else
-                                    Se connecter
                                 @endif
                             </div>
-                            <i class="fas fa-user fa-navbar fa-user-margin"></i>
                         </div>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right text-dark" aria-labelledby="dropdownMenuLink">
                         @if(Auth::check())
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST">
-                                @csrf
-                                <button type="submit" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Se déconnecter</button>
-                            </form>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                            @csrf
+                            <button type="button" class="dropdown-item" style="background-color: #FAF0E6; border: none;" onclick="confirmLogout()">
+                                <i class="fas fa-sign-out-alt fa-navbar"></i> 
+                            </button>
+                        </form>
                         @else
-                            <a class="dropdown-item philosopher" href="{{ route('login') }}">Se connecter</a>
-                            <a class="dropdown-item philosopher" href="{{ route('register') }}">S'inscrire</a>
+                        <a href="{{ route('register') }}" class="connect-display">
+                            <p class="dropdown-item philosopher">Se connecter</p>
+                            <i class="fas fa-user fa-navbar fa-user-margin"></i>
+                        </a>
+                            {{-- <a class="dropdown-item philosopher" href="{{ route('register') }}">S'inscrire</a> --}}
                         @endif
                     </div>
                 </div>
@@ -46,4 +49,11 @@
     </div>
     <div class="bottom-line-navbar">
     </div>
+    <script>
+        function confirmLogout() {
+            if (confirm("Êtes-vous sûr de vouloir vous déconnecter ?")) {
+                document.getElementById('logout-form').submit();
+            }
+        }
+    </script>
 </nav>
