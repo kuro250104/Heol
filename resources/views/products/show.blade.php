@@ -27,9 +27,11 @@
                 <div class="product_size">
                     <div class="size">
                         <span>Taille:</span>
+                        <select style="background-color: #BA9755; border-radius: 5px; color: #FAF0E6; padding-right: 1.5em; text-align: center; font-size: 0.6em;" class="philosopher">
                         @foreach($sizes as $size)
-                            <button type="button" class="btn_size">{{$size->name}}</button>
+                            <option>{{$size->name}}</option>
                         @endforeach
+                        </select>
                     </div>
                 </div>
                 <div>

@@ -13,10 +13,6 @@ body{
 a{
     text-decoration: none;
 }
-/* 
-a:hover a:visited{
-    color:#4B6F43;
-} */
 
 a:visited{
     color: #333333
@@ -38,11 +34,11 @@ nav a:hover{
     text-decoration: none;
 }
 
-/* .discovery:hover{
+.discovery:hover{
     color:#4B6F43;
     transition:0.5s;
     text-decoration: none;
-} */
+}
 
 .product{
     justify-content: space-around;
@@ -475,6 +471,10 @@ li{
 
 .fa-navbar{
     font-size: 2em;
+}
+
+.fa-navbar:hover{
+    color: #4B6F43;
 }
 
 .navbar-fa-div{
@@ -2717,6 +2717,7 @@ input.navbar-checkbox {
     background-color: #E7D0AD;
     padding: 30px;
     margin-bottom: 40px;
+    color: #333333;
 }
 
 .articles_color{
@@ -2860,5 +2861,17 @@ input.navbar-checkbox {
 }
 
 .articles:hover{
+color: #4B6F43;
+}
+
+.articles{
+    color: #121212
+}
+
+.tel{
+    color: #FAF0E6
+}
+
+.tel:hover{
 color: #4B6F43;
 }
