@@ -8,11 +8,11 @@
 
         <div class="product_link">
             <a href="{{ route('generics.index')}}"> Home / </a>
-            <a href=""> Produits/ </a>
+            <a href="{{ route('products.index')}}"> Produits/ </a>
             <span style="color:#4B6F43">{{$product->name}}</span>
         </div>
         <div class="product_show">
-            <div class="product">
+            <div class="product_div">
 
                 <div class="product_pict_view ">
                     <img src="{{ asset('images/' . $product->image) }} "class="articles_img">

@@ -4,10 +4,11 @@
     </div>
     <div>
         <span class="last_part_title">Adresse</span><br>
-        <span class="adress_txt">Open Campus,<br>
+        <a href="https://www.google.fr/maps/place/OPEN+CAMPUS+D'ANGERS/@47.4474679,-0.5428465,17z/data=!3m2!4b1!5s0x4807d6282afe76b7:0xa716ec3132132ef3!4m6!3m5!1s0x4807d7af7e8d9d75:0x3780cdb58e5a51e!8m2!3d47.4474643!4d-0.5402716!16s%2Fg%2F11ss2v_4v1" class="adress_txt" target="_blank">
+            Open Campus,<br>
             132, avenue Tassigny<br>
             Angers<br>
-        </span>
+        </a>
     </div>
     <div class="social_media_grp">
         <div>

@@ -40,13 +40,12 @@ nav a:hover{
     text-decoration: none;
 }
 
-.product{
+.product_div{
     justify-content: space-around;
     display: flex;
     background-color:#E7D0AD;
-    width: 700px;
-    height: 550px;
     align-items: center;
+    padding: 4%;
 }
 
 .product_link{
@@ -200,7 +199,7 @@ nav a:hover{
 
 .product_show{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .last_part_title{
@@ -214,6 +213,11 @@ nav a:hover{
     margin-top: 20px;
     font-family: "Cormorant Garamond";
     font-size: 20px;
+    color: #FAF0E6;
+}
+
+.last_part a:hover{
+    color: #4B6F43;
 }
 
 .social_media_grp{
@@ -1489,6 +1493,10 @@ input.navbar-checkbox {
     font-size: 20px;
 }
 
+.adress_txt:visited{
+    color: #FAF0E6;
+}
+
 .social_media_grp{
     display: flex;
     flex-direction: column;
@@ -1942,6 +1950,10 @@ input.navbar-checkbox {
     color: #FAF0E6;
     background-color: #4B6F43;
     border: 2px solid #4B6F43;
+}
+
+.btn_continue:visited{
+    color: #BA9755;
 }
 
 .btn_payement{
@@ -2728,7 +2740,6 @@ input.navbar-checkbox {
     width: 2em;
     display: flex;
     justify-content: space-between;
-    margin-top: -10px;
 }
 
 .articles_txt{
@@ -2878,4 +2889,72 @@ color: #4B6F43;
 
 .tel:hover{
 color: #4B6F43;
+}
+
+
+/* TEST */
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-content {
+    background: #FAF0E6;
+    padding: 20px;
+    border-radius: 4px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #888;
+}
+
+.modal-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal-buttons .btn-confirm {
+    background:  #BA9755;
+    color: #FAF0E6;
+}
+
+.modal-buttons .btn-confirm:hover{
+    background:  #4B6F43;
+    color: #FAF0E6;
+}
+
+.modal-buttons .btn-cancel {
+    border: 2px solid#BA9755;
+    background: #FAF0E6;
+    color: #BA9755;
+}
+
+.modal-buttons .btn-cancel:hover {
+    border: 2px solid #4B6F43;
+    background: #4B6F43;
+    color: #FAF0E6;
 }

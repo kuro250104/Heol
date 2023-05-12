@@ -1,7 +1,7 @@
 <nav style="text-decoration: none">
     <div class="navbar">
         <div>
-            <a  href="{{ route('generics.index') }}">
+            <a href="{{ route('generics.index') }}">
                 <img src="images/heol_logo.png" alt="heol logo" class="img-navbar">
             </a>
         </div>
@@ -28,7 +28,7 @@
                         @if(Auth::check())
                         <form id="logout-form" action="{{ route('logout') }}" method="POST">
                             @csrf
-                            <button type="button" class="dropdown-item" style="background-color: #FAF0E6; border: none;" onclick="confirmLogout()">
+                            <button type="button" class="dropdown-item" style="background-color: #FAF0E6; border: none;" onclick="openModal()">
                                 <i class="fas fa-sign-out-alt fa-navbar"></i>
                             </button>
                         </form>
@@ -49,11 +49,4 @@
     </div>
     <div class="bottom-line-navbar">
     </div>
-    <script>
-        function confirmLogout() {
-            if (confirm("Êtes-vous sûr de vouloir vous déconnecter ?")) {
-                document.getElementById('logout-form').submit();
-            }
-        }
-    </script>
 </nav>
