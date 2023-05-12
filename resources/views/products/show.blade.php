@@ -9,21 +9,18 @@
         <div class="product_link">
             <a href="{{ route('generics.index')}}"> Home / </a>
             <a href=""> Produits/ </a>
-            <span style="color:#4B6F43">{{$product->category_id}}</span>
+            <span style="color:#4B6F43">{{$product->name}}</span>
         </div>
         <div class="product_show">
             <div class="product">
-                <div class="product_pict">
-                    <div class="product_pict_select" ><a href=""><img src="images/bag-view-1.png"></a></div>
-                    <div class="product_pict_select" ><a href=""><img src="images/bag-view-2.png"></a></div>
-                    <div class="product_pict_select" ><a href=""><img src="images/bag-view-3.png"></a></div>
-                    <div class="product_pict_select" ><a href=""><img src="images/bag-view-4.png"></a></div>
+
+                <div class="product_pict_view ">
+                    <img src="{{ asset('images/' . $product->image) }} "class="articles_img">
                 </div>
-                <div class="product_pict_view"><img src="images/bag-view-1.png"></div>
             </div>
             <div class="name_product">
                 <h2>{{$product->name}}</h2>
-                <div class="price_product1">{{$product->price}}</div>
+                <div class="price_product1">{{$product->price}}€</div>
                 <div class="product_size">
                     <div class="size">
                         <span>Taille:</span>

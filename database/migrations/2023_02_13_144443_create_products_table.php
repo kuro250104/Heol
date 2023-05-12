@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string("description");
             $table->string("important_to_note");
             $table->string("size")->nullable();
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

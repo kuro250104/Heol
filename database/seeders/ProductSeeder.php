@@ -15,126 +15,141 @@ class ProductSeeder extends Seeder
     public function run()
     {
         \DB::table('products')->insert([
-            'name'=>'Serena Willams Sweat',
+            'name'=>'Sweat Serena Willams',
             'category_id'=>'2',
             'collection_id'=>'1',
             'price'=>'90',
             'important_to_note'=>'nb',
-            'description'=>'nb'
+            'description'=>'nb',
+            'image'=>'image1.png'
         ]);
         \DB::table('products')->insert([
-            'name'=>'Serena Willams Jogging',
+            'name'=>'Jogging Serena Willams ',
             'category_id'=>'3',
             'collection_id'=>'1',
             'price'=>'90',
             'important_to_note'=>'nb',
-            'description'=>'nb'
+            'description'=>'nb',
+            'image'=>'image2.png'
         ]);
         \DB::table('products')->insert([
-            'name'=>'Serena Willams Ensemble',
+            'name'=>'Ensemble Serena Willams ',
             'category_id'=>'1',
             'collection_id'=>'1',
             'price'=>'180',
             'important_to_note'=>'nb',
-            'description'=>'nb'
+            'description'=>'nb',
+            'image'=>'image3.png'
         ]);
         \DB::table('products')->insert([
-            'name'=>'Vanina Paoletti Brassière',
+            'name'=>'Brassière Vanina Paoletti ',
             'category_id'=>'4',
             'collection_id'=>'2',
             'price'=>'50',
             'important_to_note'=>'nb',
-            'description'=>'nb'
+            'description'=>'nb',
+            'image'=>'image4.png'
         ]);
         \DB::table('products')->insert([
-            'name'=>'Vanina Paoletti Short',
+            'name'=>'Short Vanina Paoletti ',
             'category_id'=>'4',
             'collection_id'=>'2',
             'price'=>'60',
             'important_to_note'=>'nb',
-            'description'=>'nb'
+            'description'=>'nb',
+            'image'=>'image5.png'
         ]);
         \DB::table('products')->insert([
-            'name'=>'Vanina Paoletti Polo',
+            'name'=>'Polo Vanina Paoletti ',
             'category_id'=>'7',
             'collection_id'=>'2',
             'price'=>'60',
             'important_to_note'=>'nb',
-            'description'=>'nb'
+            'description'=>'nb',
+            'image'=>'image6.png'
         ]);
         \DB::table('products')->insert([
-            'name'=>'Vanina Paoletti Jupe',
+            'name'=>'Jupe Vanina Paoletti ',
             'category_id'=>'6',
             'collection_id'=>'2',
             'price'=>'40',
             'important_to_note'=>'nb',
-            'description'=>'nb'
+            'description'=>'nb',
+            'image'=>'image7.png'
         ]);
         \DB::table('products')->insert([
-            'name'=>'Vanina Paoletti Ensemble',
+            'name'=>'Ensemble Vanina Paoletti ',
             'category_id'=>'1',
             'collection_id'=>'2',
             'price'=>'210',
             'important_to_note'=>'nb',
-            'description'=>'nb'
+            'description'=>'nb',
+            'image'=>'image8.png'
         ]);
 
         \DB::table('products')->insert([
-        'name'=>'Oscar Robertson T-Shirt',
+        'name'=>'T-Shirt Oscar Robertson',
         'category_id'=>'8',
         'collection_id'=>'3',
         'price'=>'50',
         'important_to_note'=>'nb',
-        'description'=>'nb'
+        'description'=>'nb',
+        'image'=>'image9.png'
         ]);
 
         \DB::table('products')->insert([
-            'name'=>'Oscar Robertson Short',
+            'name'=>'Short Oscar Robertson ',
             'category_id'=>'5',
             'collection_id'=>'3',
             'price'=>'50',
             'important_to_note'=>'nb',
-            'description'=>'nb'
+            'description'=>'nb',
+            'image'=>'image10.png'
         ]);
         \DB::table('products')->insert([
-            'name'=>'Oscar Robertson Ensemble',
+            'name'=>'Ensemble Oscar Robertson ',
             'category_id'=>'1',
             'collection_id'=>'3',
             'price'=>'100',
             'important_to_note'=>'nb',
-            'description'=>'nb'
+            'description'=>'nb',
+            'image'=>'image11.png'
         ]);
         \DB::table('products')->insert([
-            'name'=>'Usain Bolt Sac',
+            'name'=>'Sac Usain Bolt ',
             'category_id'=>'9',
             'collection_id'=>'4',
             'price'=>'22',
             'important_to_note'=>'nb',
-            'description'=>'nb'
+            'description'=>'nb',
+            'image'=>'image12.png'
         ]);
         \DB::table('products')->insert([
-            'name'=>'Usain Bolt Baskets',
+            'name'=>'Baskets Usain Bolt ',
             'category_id'=>'10',
             'collection_id'=>'4',
             'price'=>'150',
             'important_to_note'=>'nb',
-            'description'=>'nb'
+            'description'=>'nb',
+            'image'=>'image13.png'
         ]);
         \DB::table('products')->insert([
-            'name'=>'Usain Bolt Ensemble',
+            'name'=>'Ensemble Usain Bolt ',
             'category_id'=>'1',
             'collection_id'=>'4',
             'price'=>'170',
             'important_to_note'=>'nb',
-            'description'=>'nb'
+            'description'=>'nb',
+            'image'=>'image14.png'
         ]);
         \DB::table('products')->insert([
-            'name'=>'Lewis Hamilton',
+            'name'=>'Chaussettes Lewis Hamilton',
             'category_id'=>'11',
             'collection_id'=>'5',
             'price'=>'20',
             'important_to_note'=>'nb',
-            'description'=>'nb'
+            'description'=>'nb',
+            'image'=>'image15.png'
         ]);
 
     }

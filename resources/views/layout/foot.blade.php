@@ -11,7 +11,7 @@
     </div>
     <div class="social_media_grp">
         <div>
-            <span class="last_part_title">Reseau sociaux</span>
+            <span class="last_part_title">Réseaux sociaux</span>
         </div>
         <div class="img_4_spcial_grp">
             <a href="">
