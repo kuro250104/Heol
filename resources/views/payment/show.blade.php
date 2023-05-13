@@ -43,23 +43,43 @@
                     <span>Chronopost</span>
                 </div>
             </div>
-            <div class="confirmed_price">
-                <span class="confirmed_articles">1 tee shirt de sport</span>
-                <span>150 €</span>
+            <div class="confirmed_price" style="display: flex; flex-direction: column">
+                @foreach ($products as $product)
+                <div style="display: flex; justify-content: space-between;">
+                    <span class="confirmed_articles">1 {{$product->name}}</span>
+                    <span>{{$product->price}}€</span>
+                </div>
+                @endforeach
             </div>
             <div>
                 <div class="confirmed_delivery_price">
                     <span class="confirmed_delivery_price_txt">Cout de la livraison</span>
-                    <span>10 €</span>
+                    <span>0 €</span>
                 </div>
                 <div class="confirmed_checkout">
                     <span class="confirmed_checkout_txt">Total du panier</span>
-                    <span>150 €</span>
+                    <span>
+                        <?php
+                        $total = 0;
+                        foreach ($products as $product) {
+                            $total += $product->price;
+                        }
+                        echo $total . "€";
+                    ?>
+                    </span>
                 </div>
                 <div class="confirmation_line_checkout"></div> 
                 <div class="confirmed_total_checkout_price">
                     <span class="total_txt">Total</span>
-                    <span>160 €</span>
+                    <span>
+                        <?php
+                        $total = 0;
+                        foreach ($products as $product) {
+                            $total += $product->price;
+                        }
+                        echo $total . "€";
+                    ?>
+                    </span>
                 </div>
                 <div class="confirmation_line_checkout"></div> 
             </div>

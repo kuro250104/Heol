@@ -13,4 +13,14 @@ class Product extends Model
     protected $fillable = [
         "name", "price","description","important_to_note","category_id","size"
     ];
+
+    public function product_user()
+    {
+        return $this->hasMany(Product_user::class);
+    }
+
+    public function cart_product()
+    {
+        return $this->hasMany(Cart_Product::class);
+    }
 }

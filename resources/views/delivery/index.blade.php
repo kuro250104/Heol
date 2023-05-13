@@ -24,19 +24,31 @@
                 <span class="order_detail_txt">Détail panier</span>
             </div>
             <div class="order_detail_class_articles">
-                <span class="order_detail_article_txt">Ensemble de sport</span>
-                <div>
+                <div style="display: flex; flex-direction: column">
+                    @foreach ($products as $product)
+                        <span class="order_detail_article_txt" style="padding-top: 5px">1 {{$product->name}}</span>
+                    @endforeach
+                </div>
+                {{-- <div>
                     <div>
                         <button id="delete_one"type="button" class="btn_add_articles">-</button>
                         <button id="add_one"type="button" class="btn_add_articles">+</button>
                     </div>
                 </div>
-                <span class="order_detail_price" id="count">1</span>
+                <span class="order_detail_price" id="count">1</span> --}}
             </div>
             <div>
                 <div class="order_detail_class">
                     <span class="order_detail_alt_txt">Total du panier</span>
-                    <span class="order_detail_price">300€</span>
+                    <span class="order_detail_price">
+                        <?php
+                            $total = 0;
+                            foreach ($products as $product) {
+                                $total += $product->price;
+                            }
+                            echo $total . "€";
+                        ?>
+                    </span>
                 </div>
                 <div class="order_detail_class">
                 <span class="order_detail_alt_txt">Frais de livraison</span>
@@ -45,7 +57,15 @@
                 <div class="top_line__totalcheckout"></div>
                 <div class="order_detail_class">
                     <span class="order_detail_alt_txt">Total</span>
-                    <span class="order_detail_price">300€</span>
+                    <span class="order_detail_price">
+                        <?php
+                        $total = 0;
+                        foreach ($products as $product) {
+                            $total += $product->price;
+                        }
+                        echo $total . "€";
+                    ?>
+                    </span>
                 </div>
             </div>
         </div>
@@ -59,7 +79,7 @@
                     <div>
                         <span class="delivery_txt">Nom</span>
                         <div>
-                            <input type="text" class="input_delivery" name="name" id="name"required>
+                            <input type="text" class="input_delivery" name="name" id="name" required>
                         </div>
                     </div>
                     <div>

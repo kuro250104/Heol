@@ -3,12 +3,12 @@
 @section('content')
 
     <div class="checkout_payement_check">
-        <a class="checkout_icon active">
+        <a class="checkout_icon">
             <i class="fa fa-shopping-cart "></i>
             <span class="txt_icon">Panier</span>
         </a>
         <div class="right_line_checkout"></div> 
-        <a class="payement_icon">
+        <a class="payement_icon active">
             <i class="fa fa-credit-card "></i>
             <span class="txt_icon">Payement</span>
         </a>
@@ -26,7 +26,15 @@
             <div>
                 <div class="order_detail_class">
                     <span class="order_detail_alt_txt">Total du panier</span>
-                    <span class="order_detail_price">300€</span>
+                    <span class="order_detail_price">
+                        <?php
+                        $total = 0;
+                        foreach ($price_products as $product) {
+                            $total += $product->price;
+                        }
+                        echo $total . "€";
+                    ?>
+                    </span>
                 </div>
                 <div class="order_detail_class">
                 <span class="order_detail_alt_txt">Frais de livraison</span>
@@ -35,7 +43,15 @@
                 <div class="top_line__totalcheckout"></div> 
                 <div class="order_detail_class">
                     <span class="order_detail_alt_txt">Total</span>
-                    <span class="order_detail_price">300€</span>
+                    <span class="order_detail_price">
+                        <?php
+                        $total = 0;
+                        foreach ($price_products as $product) {
+                            $total += $product->price;
+                        }
+                        echo $total . "€";
+                    ?>
+                    </span>
                 </div>
             </div>
         </div>

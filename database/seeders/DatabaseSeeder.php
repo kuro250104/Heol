@@ -20,13 +20,8 @@ class DatabaseSeeder extends Seeder
             SizeSeeder::class,
             CategorySeeder::class,
             ProductSeeder::class,
+            UserSeeder::class,
+            Product_userSeeder::class,
         ]);
-        // \App\Models\User::factory(10)->create();
-
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
-
     }
 }

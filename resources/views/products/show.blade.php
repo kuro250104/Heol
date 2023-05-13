@@ -3,9 +3,6 @@
 @section('content')
 
 <main>
-
-
-
         <div class="product_link">
             <a href="{{ route('generics.index')}}"> Home / </a>
             <a href="{{ route('products.index')}}"> Produits/ </a>
@@ -13,27 +10,34 @@
         </div>
         <div class="product_show">
             <div class="product_div">
-
                 <div class="product_pict_view ">
                     <img src="{{ asset('images/' . $product->image) }} "class="articles_img">
                 </div>
             </div>
             <div class="name_product">
-                <h2>{{$product->name}}</h2>
-                <div class="price_product1">{{$product->price}}€</div>
-                <div class="product_size">
-                    <div class="size">
-                        <span>Taille:</span>
-                        <select style="background-color: #BA9755; border-radius: 5px; color: #FAF0E6; padding-right: 1.5em; text-align: center; font-size: 0.6em;" class="philosopher">
-                        @foreach($sizes as $size)
-                            <option>{{$size->name}}</option>
-                        @endforeach
-                        </select>
+                <form method="POST" action="{{ route('products.store', ['id' => $product->id]) }}">
+                    @csrf
+                    <div class="center_product">
+                        <h2>{{$product->name}}</h2>
+                        <div class="size">
+                            <span>Taille:</span>
+                            <select name="size_id" style="background-color: #BA9755; border-radius: 5px; color: #FAF0E6; padding-right: 1.5em; text-align: center; font-size: 0.6em;" class="philosopher">
+                            @foreach($sizes as $size)
+                                <option value="{{ $size->id }}">{{ $size->name }}</option>
+                            @endforeach
+                            </select>
+                        </div>
+                        @if(Auth::check())
+                            <form action="{{ route('products.store', ['id' => $product->id]) }}" method="POST">
+                                @csrf
+                                <button type="submit" class="btn">Ajouter au panier</button>
+                            </form>
+                        @else
+                            <a href="{{ route('login') }}" class="btn connect_cart">Ajouter au panier</a>
+                        @endif
                     </div>
-                </div>
-                <div>
-                    <a href="" class="btn" type="button">Ajouter au panier</a>
-                </div>
+                </form>
+
             </div>
         </div>
         <div class="description_product1">

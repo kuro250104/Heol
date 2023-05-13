@@ -3,14 +3,25 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
 
 use App\Models\Delivery;
+use App\Models\Cart;
 
 class DeliveryController extends Controller
 {
-    public function index(){
-        return view('delivery.index');
+    public function index()
+    {
+        $user = Auth::user();
+        $userId = $user->id;
+        
+        $cart = Cart::with('products')->where('user_id', $userId)->first();
+        $products = $cart->products;
+        
+        return view('delivery.index', compact('products'));
     }
+    
 
     public function store(Request $request){
         $delivery = new Delivery;

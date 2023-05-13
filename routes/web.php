@@ -40,10 +40,10 @@ Route::get('/home', [GenericsController::class, 'index'])->name("generics.index"
 
 Route::get('/a-propos-de-nous', [AboutUsController::class, 'index'])->name("generics.about_us");
 
-Route::get('/add-products', [ProductController::class, 'store'])->name('products.store');
 
 Route::get('/nos-produits', [ProductController::class, 'index'])->name("products.index");
 Route::get('/article{id}', [ProductController::class, 'show'])->name("products.show");
+Route::post('/products/{id}/ajout-au-panier', [ProductController::class, 'store'])->name('products.store');
 
 
 Route::get('/votre-panier', [DeliveryController::class, 'index'])->name("delivery.index");

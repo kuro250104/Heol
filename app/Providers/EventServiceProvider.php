@@ -7,6 +7,10 @@ use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Event;
 
+use App\Events\ClearCartEvent;
+use Illuminate\Auth\Events\Logout;
+use Illuminate\Session\Events\SessionClosed;
+
 class EventServiceProvider extends ServiceProvider
 {
     /**

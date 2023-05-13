@@ -5,7 +5,7 @@
     const modalContainer = document.createElement('div');
     modalContainer.classList.add('modal-container');
     modalContainer.innerHTML = `
-        <div class="modal-content">
+        <div class="modal-content philosopher_font">
         <p>Êtes-vous sûr de vouloir vous déconnecter ?</p>
         <div class="modal-buttons">
         <button class="btn-confirm">Confirmer</button>
