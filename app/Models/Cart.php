@@ -24,4 +24,17 @@ class Cart extends Model
     {
         return $this->belongsToMany(Product::class)->withPivot('size_id');
     }
+
+    //     public function products()
+    // {
+    //     return $this->belongsToMany(Product::class)
+    //         ->using(Cart_Product::class)
+    //         ->withPivot(['id', 'quantity', 'size_id']);
+    // }
+
+    public function size()
+    {
+        return $this->belongsTo(Size::class, 'size_id');
+    }
+
 }

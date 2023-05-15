@@ -4,7 +4,7 @@
 
         <!-- Name -->
         <div>
-            <x-input-label for="name" :value="__('Name')" style="color: black"/>
+            <x-input-label for="name" :value="__('Nom')" style="color: black"/>
             <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" style="background-color: #FAF0E6; border: none; color: black" required autofocus autocomplete="name" />
             <x-input-error :messages="$errors->get('name')" class="mt-2" />
         </div>
@@ -18,7 +18,7 @@
 
         <!-- Password -->
         <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" style="color: black"/>
+            <x-input-label for="password" :value="__('Mot de passe')" style="color: black"/>
 
             <x-text-input id="password" class="block mt-1 w-full"
                             type="password"
@@ -31,7 +31,7 @@
 
         <!-- Confirm Password -->
         <div class="mt-4">
-            <x-input-label for="password_confirmation" :value="__('Confirm Password')" style="color: black"/>
+            <x-input-label for="password_confirmation" :value="__('Confirmer le mot de passe')" style="color: black"/>
 
             <x-text-input id="password_confirmation" class="block mt-1 w-full"
                             type="password"
@@ -44,11 +44,11 @@
 
         <div class="flex items-center justify-end mt-4">
             <a  style="color: #BA9755" class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800" href="{{ route('login') }}">
-                {{ __('Already registered?') }}
+                {{ __('Déja un compte ?') }}
             </a>
 
             <x-primary-button class="ml-4">
-                {{ __('Register') }}
+                {{ __('Connexion') }}
             </x-primary-button>
         </div>
     </form>

@@ -12,6 +12,8 @@ use App\Models\Size;
 use App\Models\Category;
 use App\Models\Product_user;
 use App\Models\Cart;
+use App\Models\Cart_product;
+
 
 class ProductController extends Controller
 {

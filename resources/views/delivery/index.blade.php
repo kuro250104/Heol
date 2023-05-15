@@ -26,9 +26,12 @@
             <div class="order_detail_class_articles">
                 <div style="display: flex; flex-direction: column">
                     @foreach ($products as $product)
-                        <span class="order_detail_article_txt" style="padding-top: 5px">1 {{$product->name}}</span>
+                        <span class="order_detail_article_txt" style="padding-top: 5px">
+                            1 {{ $product->name }}
+                        </span>
                     @endforeach
                 </div>
+                
                 {{-- <div>
                     <div>
                         <button id="delete_one"type="button" class="btn_add_articles">-</button>
