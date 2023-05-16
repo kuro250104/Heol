@@ -45,11 +45,14 @@
                 <div class="name_product1">
                     <h3>Details</h3>
                 </div>
+                <div class="description_txt_product">
+                    {{$product->description}}
+                </div>
                 <div class="description_name_product">
                     <h2>Matétiel</h2>
                 </div>
                 <div class="description_txt_product">
-                    {{$product->description}}
+                    {{$product->composition}}
                 </div>
                 <div class="description_name_product">
                     <h2>Conseil d'entretien</h2>
