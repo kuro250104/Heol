@@ -61,7 +61,9 @@
                     {{$product->important_to_note}}
                 </div>
             </div>
-            <div class="pict_description" ><img src="images/croquis_montre.png"></div>
+            <div class="pict_description">
+                <img src="images/lavement-removebg-preview.png" class="img_show">
+            </div>
         </div>
 
 

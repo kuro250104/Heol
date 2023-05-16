@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="div-discover-heol">
+    <div class="div-discover-heol">
         <p class="txt-discover-heol">
             Heol est une marque créée en 2022 par neuf étudiants stimulés par l’envie de consommer mieux, en
             conservant une certaine esthétique liée à la pratique du sport. La marque HEOL s’inscrit dans le
@@ -15,9 +15,6 @@
             tout en s’adaptant à une pratique de consommation: porter des vêtements de sport au quotidien.
             L’équipe HEOL est fière de vous présenter sa marque de produits sportifs éco-responsable et moyen de
             gamme.
-        </p>
-        <p class="txt-discover-heol">
-            Tennis, running, fitness,
         </p>
     </div>
 

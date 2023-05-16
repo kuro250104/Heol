@@ -322,9 +322,6 @@ nav a:hover{
     .description_txt_product{
         font-size:18px ;
     }
-    .pict_description{
-        height: 350px;
-    }
     .price_product1{
         margin-top: 30px
     }
@@ -367,9 +364,6 @@ nav a:hover{
     .product{
         height: auto;
     }
-    .pict_description{
-        height: 300px;
-    }
     .description_txt_product {
         font-size: 15px;
     }
@@ -408,9 +402,6 @@ nav a:hover{
     }
     .product_pict_select img{
         height: 75px;
-    }
-    .pict_description{
-        height: 250px;
     }
 }
 
@@ -2976,4 +2967,20 @@ color: #4B6F43;
 .connect_cart{
     font-family: 'Philosopher';
     font-weight: 800;
+}
+
+.img_show{
+    width: 550px;
+}
+
+@media screen and (max-width: 500px){
+    .img_show{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .img_show{
+        width: 350px;
+    }
 }

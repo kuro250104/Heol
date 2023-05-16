@@ -19,7 +19,7 @@
             </span>
             <div class="bottom_line_product_show"></div> 
             <div class="discovery_class">
-                <a href="discover_heol.html" class="discovery">
+                <a href="{{ route('generics.about_us') }}" class="discovery">
                     <p style="font-weight: 600;">Découvrir</p>
                 </a>
             </div>
@@ -35,7 +35,7 @@
                 <div class="bottom_line_2_product_show"></div> 
             </div>
             <div>
-                <img class="img_2_product" src="images/paire_de_chaussure-removebg-preview.png">
+                <img class="img_2_product" src="images/Paire_de_Baskets_USAIN_BOLT-removebg-preview.png">
             </div>
         </div>
     </div>
@@ -48,12 +48,12 @@
                 <div class="bottom_line_2_product_show"></div> 
             </div>
             <div>
-                <img class="img_2_product" src="images/chaussette-removebg-preview.png">
+                <img class="img_2_product" src="images/chaussettesPlan de travail 1.png">
             </div>
         </div>
     </div>
 </div>
-<div class="recent_news">
+{{-- <div class="recent_news">
     <div class="txt_recent_news">
         <div class="txt_recent_news_and_bottom_line">
             <span class="just_txt_recent_news">Ajout récent</span>
@@ -76,6 +76,6 @@
     <div class="background_new_sac_show">
         <img class="news_sac_show_img"src="images/sac-ajout-recent.png">
     </div>
-</div>
+</div> --}}
 
 @endsection
