@@ -49,7 +49,7 @@
                     {{$product->description}}
                 </div>
                 <div class="description_name_product">
-                    <h2>Matétiel</h2>
+                    <h2>Matériel</h2>
                 </div>
                 <div class="description_txt_product">
                     {{$product->composition}}

@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string("name");
             $table->float("price");
             $table->text("description");
-            $table->string("important_to_note");
-            $table->string("composition")->nullable();
+            $table->text("important_to_note");
+            $table->text("composition")->nullable();
             $table->string('image')->nullable();
             $table->timestamps();
         });

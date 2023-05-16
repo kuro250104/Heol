@@ -120,7 +120,7 @@ nav a:hover{
     cursor: pointer;
     transition: 0.4s;
     margin-top: 75px;
-    
+
 }
 
 .btn:hover{
@@ -139,7 +139,7 @@ nav a:hover{
     color: #ffffff;
     background-color: #BA9755;
     cursor: pointer;
-    transition: 0.4s; 
+    transition: 0.4s;
     margin-right: 0.3em;
 }
 
@@ -247,7 +247,7 @@ nav a:hover{
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
-    
+
 }
 
 .btn_cart{
@@ -279,6 +279,7 @@ nav a:hover{
 
 .description_product1_txt{
     max-width: 72em;
+    text-align: center;
 }
 
 @media screen and (max-width:1300px){
@@ -305,8 +306,8 @@ nav a:hover{
     .nav_bar{
         display: none;
     }
-    
-    
+
+
 }
 
 @media screen and (max-width:850px) {
@@ -822,7 +823,7 @@ input.navbar-checkbox {
 .bottom_line_product_show{
     margin-top: 50px;
     border-top: 1px solid #000;
-    width : 500px; 
+    width : 500px;
 }
 
 .discovery{
@@ -865,7 +866,7 @@ input.navbar-checkbox {
         font-size: 20px;
     }
     .bottom_line_product_show{
-        width : 400px; 
+        width : 400px;
     }
 }
 
@@ -883,7 +884,7 @@ input.navbar-checkbox {
         font-size: 14px;
     }
     .bottom_line_product_show{
-        width : 300px; 
+        width : 300px;
     }
 }
 
@@ -912,7 +913,7 @@ input.navbar-checkbox {
         font-size: 14px;
     }
     .bottom_line_product_show{
-        width : 300px; 
+        width : 300px;
     }
     .discovery_class{
         text-align: center;
@@ -974,7 +975,7 @@ input.navbar-checkbox {
         font-size: 22px;
     }
     .bottom_line_product_show{
-        width : 200px; 
+        width : 200px;
         margin-top: 25px;
     }
 }
@@ -1021,7 +1022,7 @@ input.navbar-checkbox {
 .bottom_line_2_product_show{
     margin-top: 10px;
     border-top: 1px solid #000;
-    width : 100px; 
+    width : 100px;
 }
 
 .sock_discovery_display{
@@ -1079,7 +1080,7 @@ input.navbar-checkbox {
         font-size: 16px;
     }
     .bottom_line_2_product_show{
-        width : 80px; 
+        width : 80px;
     }
 }
 
@@ -1097,7 +1098,7 @@ input.navbar-checkbox {
         font-size: 15px;
     }
     .bottom_line_2_product_show{
-        width : 75px; 
+        width : 75px;
     }
 }
 
@@ -1121,7 +1122,7 @@ input.navbar-checkbox {
         font-size: 20px;
     }
     .bottom_line_2_product_show{
-        width : 100px; 
+        width : 100px;
     }
 }
 
@@ -1141,7 +1142,7 @@ input.navbar-checkbox {
         font-size: 16px;
     }
     .bottom_line_2_product_show{
-        width : 80px; 
+        width : 80px;
     }
 }
 
@@ -1162,7 +1163,7 @@ input.navbar-checkbox {
     }
     .bottom_line_2_product_show{
         width : 70px;
-        margin-top: 5px; 
+        margin-top: 5px;
     }
 }
 
@@ -1182,7 +1183,7 @@ input.navbar-checkbox {
         font-size: 13px;
     }
     .bottom_line_2_product_show{
-        width : 65px; 
+        width : 65px;
     }
 }
 /* END PART 3 */
@@ -1225,7 +1226,7 @@ input.navbar-checkbox {
 .bottom_line_recent_news{
     margin-top: 10px;
     border-top: 1px solid #000;
-    width : 150px; 
+    width : 150px;
 }
 
 .txt_recent_news_and_bottom_line{
@@ -1517,7 +1518,7 @@ input.navbar-checkbox {
     margin:0;
     list-style:none;
     text-align: center;
-    
+
 }
 .menu ul {
     padding:0;
@@ -1526,11 +1527,11 @@ input.navbar-checkbox {
     text-align: center;
 }
 .menu li {
-    background-color:#BA9755; 
+    background-color:#BA9755;
     background-image:#FAF0E6;
     margin-bottom:2px;
     border:solid 1px #BA9755;
-    
+
 }
 .menu li li {
     max-height:0;
@@ -1554,7 +1555,7 @@ input.navbar-checkbox {
 .menu li:hover {
     background: #BA9755;
     color:#BA9755;
-    
+
 }
 .menu li li:hover {
     display: flex;
@@ -1770,7 +1771,7 @@ input.navbar-checkbox {
     margin-right: 50px;
     margin-left: 50px;
     border-top: 1px solid #000;
-    width : 200px; 
+    width : 200px;
 }
 
 @media screen and (max-width: 1200px){
@@ -1781,7 +1782,7 @@ input.navbar-checkbox {
         margin-top: 50px;
         margin-right: 40px;
         margin-left: 40px;
-        width : 150px; 
+        width : 150px;
     }
 }
 
@@ -1793,7 +1794,7 @@ input.navbar-checkbox {
         margin-top: 43px;
         margin-right: 30px;
         margin-left: 30px;
-        width : 130px; 
+        width : 130px;
     }
 }
 
@@ -1805,7 +1806,7 @@ input.navbar-checkbox {
         margin-top: 36px;
         margin-right: 20px;
         margin-left: 20px;
-        width : 110px; 
+        width : 110px;
     }
 }
 
@@ -1817,7 +1818,7 @@ input.navbar-checkbox {
         margin-top: 30px;
         margin-right: 10px;
         margin-left: 10px;
-        width : 90px; 
+        width : 90px;
     }
 }
 
@@ -1829,7 +1830,7 @@ input.navbar-checkbox {
         margin-top: 28px;
         margin-right: 5px;
         margin-left: 5px;
-        width : 70px; 
+        width : 70px;
     }
 }
 
@@ -1881,7 +1882,7 @@ input.navbar-checkbox {
     margin-right: 50px;
     margin-left: 50px;
     border-top: 1px solid #000;
-    width : 300px; 
+    width : 300px;
 }
 
 .delivery_all_info{
@@ -2301,7 +2302,7 @@ input.navbar-checkbox {
     margin-top: 60px;
     margin-bottom: 60px;
     border-top: 1px solid #000;
-    width : 100%; 
+    width : 100%;
 }
 
 .confirmed_total_checkout_price{

@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class Userseeder extends Seeder
+class CartSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,10 +14,8 @@ class Userseeder extends Seeder
      */
     public function run()
     {
-        \DB::table('users')->insert([
-            'name'=>'Dupond',
-            'email'=>'dupond@dupond.fr',
-            'password'=>'aaaaaaaaaa',
+        \DB::table('carts')->insert([
+            'user_id'=>'1',
         ]);
     }
 }

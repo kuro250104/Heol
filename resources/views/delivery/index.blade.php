@@ -25,20 +25,18 @@
             </div>
             <div class="order_detail_class_articles">
                 <div style="display: flex; flex-direction: column">
+                    @if ($products === null )
+                        oui
+                    @else
+
                     @foreach ($products as $product)
+
                         <span class="order_detail_article_txt" style="padding-top: 5px">
                             1 {{ $product->name }} - {{$cart_product[0]->size->name}}
                         </span>
                     @endforeach
-                </div>
 
-                {{-- <div>
-                    <div>
-                        <button id="delete_one"type="button" class="btn_add_articles">-</button>
-                        <button id="add_one"type="button" class="btn_add_articles">+</button>
-                    </div>
                 </div>
-                <span class="order_detail_price" id="count">1</span> --}}
             </div>
             <div>
                 <div class="order_detail_class">
@@ -69,6 +67,7 @@
                         echo $total . "€";
                     ?>
                     </span>
+                    @endif
                 </div>
             </div>
         </div>
