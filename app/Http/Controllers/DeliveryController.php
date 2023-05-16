@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 
 use App\Models\Delivery;
 use App\Models\Cart;
+use App\Models\Cart_Product;
 
 class DeliveryController extends Controller
 {
@@ -15,13 +16,15 @@ class DeliveryController extends Controller
     {
         $user = Auth::user();
         $userId = $user->id;
-        
+
         $cart = Cart::with('products')->where('user_id', $userId)->first();
         $products = $cart->products;
-        
-        return view('delivery.index', compact('products'));
+        $cart_product = Cart_Product::with('size')->get();
+
+
+        return view('delivery.index', compact('products', 'cart_product'));
     }
-    
+
 
     public function store(Request $request){
         $delivery = new Delivery;
